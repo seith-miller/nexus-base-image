@@ -1,4 +1,4 @@
-name: Lint Workflows
+name: Lint GitHub Workflows
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  actionlint:
+  lint-workflows:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -35,4 +35,3 @@ jobs:
         with:
           file_or_dir: .github/workflows
           config_file: .yamllint.yml
-
