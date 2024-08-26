@@ -24,21 +24,4 @@ To use this base image in your Nexus service, start your Dockerfile with:
 
 ```dockerfile
 FROM ghcr.io/your-org/nexus-base:latest
-
-Updating
-Modify Dockerfile or related files
-Push changes to main branch
-Create a new release
-GitHub Actions will automatically build and push the new multi-arch image.
-
-Versioning
-Semantic versioning (MAJOR.MINOR.PATCH) is used.
-
-Verify Multi-Arch Support
-bash
-Copy code
-docker manifest inspect ghcr.io/your-org/nexus-base:latest
-csharp
-Copy code
-
-This artifact contains the condensed README.md file with the essential information for your Nexus base image repository. You can now use this file in your repository, providing just the necessary details for internal use and AI agents.
+```
